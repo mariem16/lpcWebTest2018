@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('LpcWebTest2017')
+angular.module('LpcWebTest2018')
   .constant('RESOURCES',(function(){
     var BASE_URL = 'https://recrutement.lepotcommuntest.fr/recruting/2017';
     return {
