@@ -1,4 +1,4 @@
-angular.module('LpcWebTest2017')
+angular.module('LpcWebTest2018')
     .service('LpcTranslateService',['$http','$rootScope',function($http,$rootScope){
         var
             //TODO
