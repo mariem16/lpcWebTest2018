@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('LpcWebTest2017')
+angular.module('LpcWebTest2018')
     .directive('lpcLazyBackground', [function () {
   var lpcLazyBackgroundLink = function (scope, elem, attr) {
     //TODO
