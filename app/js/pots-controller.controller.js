@@ -10,10 +10,15 @@ angular.module('LpcWebTest2018')
 		});
 
         $scope.changeLocale = function(lang) {
-        	$scope.locale = lang;
-            
+        	$scope.locale = angular.copy(lang);
+        	localStorage.setItem("locale", lang);
+        	
 
         };
+
+        
+
+ 
 
 
     }]);

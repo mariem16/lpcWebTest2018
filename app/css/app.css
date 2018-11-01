@@ -50,7 +50,8 @@ html,body{
 .pot-item {
     width:100%;
     height:100%;
-    background-position: center center;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
    
 }

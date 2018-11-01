@@ -6,24 +6,19 @@ angular.module('LpcWebTest2018')
 
   var lpcLazyBackgroundLink = function (scope, elem, attr) {
     //TODO 
-                    var src = scope.lpcLazyBackground;
-                    var img = new Image();
+    var src = scope.lpcLazyBackground;
+    var img = new Image();
+    elem.addClass('loading');
 
+    img.onload = function() {
+        elem.removeClass('loading');
+        elem.css({
+          'background-image': 'url(' + this.src + ')'
+        });
+    };
 
-                      elem.addClass('loading');
-
-
-                     img.onload = function() {
-
-                        elem.removeClass('loading');
-
-                        elem.css({
-                            'background-image': 'url(' + this.src + ')'
-                        });
-                    };
-
-                    img.src = src;
-      }
+    img.src = src;
+  }
     
   return {
     restrict: 'A', scope: {lpcLazyBackground: '='}, link: lpcLazyBackgroundLink

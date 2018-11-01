@@ -3,6 +3,7 @@ angular.module('LpcWebTest2018')
         
 
         var propertiesUrl;
+
             //TODO
 
 
@@ -13,8 +14,8 @@ angular.module('LpcWebTest2018')
             },
             loadPropertiesImpl = function(){
                 //TODO
-                 $http.get(propertiesUrl).then(function(response) {
-                    $rootScope.pros = response.data;
+                 return $http.get(propertiesUrl).then(function(response) {
+                    return pros = response.data;
                 });
                  
 
