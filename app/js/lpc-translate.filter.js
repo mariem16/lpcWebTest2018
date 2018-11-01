@@ -26,10 +26,5 @@ angular.module('LpcWebTest2018')
         //TODO
  
         filter.$stateful = true;
-<<<<<<< HEAD
-
-        
-=======
->>>>>>> 300d51300d46731bfc39be5296a93bcad7b3cbdb
         return filter;
     }]);
