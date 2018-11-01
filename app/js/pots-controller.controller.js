@@ -11,6 +11,10 @@ angular.module('LpcWebTest2018')
 
         $scope.changeLocale = function(lang) {
         	$scope.locale = angular.copy(lang);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 300d51300d46731bfc39be5296a93bcad7b3cbdb
         	localStorage.setItem("locale", lang);
         	
 
