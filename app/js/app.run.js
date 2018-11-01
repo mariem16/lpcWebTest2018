@@ -5,7 +5,6 @@ angular.module('LpcWebTest2018')
         //TODO
 
         LpcTranslateService.setPropertiesUrl(RESOURCES.PROPERTIES_URL);
-		LpcTranslateService.loadProperties();
 
 
 
